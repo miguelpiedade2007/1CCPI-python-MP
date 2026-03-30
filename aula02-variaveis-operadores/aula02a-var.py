@@ -20,5 +20,5 @@ print(f"seu nome é: {nome}")
 #input- formulário
 nome = input("digite seu nome: ")
 print(f"seu nome é: {nome}")
-idade = input("digite sua idade: ")
+idade_input = input("digite sua idade: ")
 print(f"sua idade é {idade}")

@@ -1,3 +1,4 @@
+print("olá mundo")
 while True:
     resposta = input("quer continuar, ou deseja sair (s/sair)").lower().strip()
 

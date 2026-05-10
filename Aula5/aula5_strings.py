@@ -6,4 +6,4 @@ print(tamanho)
 print()
 
 for i in range(tamanho):
-    print(f"texto[{i}] = {texto [i]}")
+    print(f"texto[{i+1}] = {texto [i]}")

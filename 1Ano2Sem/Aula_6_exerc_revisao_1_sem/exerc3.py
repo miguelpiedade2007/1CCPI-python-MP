@@ -1,4 +1,4 @@
-n = 0
+
 soma = 0
 
 n = int(input("Digite um número positvo N, esse programa exibirá a soma de todos os números até N: "))

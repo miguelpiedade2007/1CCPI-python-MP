@@ -4,3 +4,4 @@ for x in range(1, n+1):
     y = n%x
     if y == 0:
         print(x)
+

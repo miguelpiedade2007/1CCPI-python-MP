@@ -1,6 +1,7 @@
 
 # Receber um núemro e verificar se é primo
-# printar todos os números até esse recebido / Acabei modificando essa regra pra deixar mais otimizado, será printado apenas até metade de N
+# printar todos os números até esse recebido /
+# Acabei modificando essa regra pra deixar mais otimizado, será printado apenas até metade de N
 # indicando se são primos ou não
 
 

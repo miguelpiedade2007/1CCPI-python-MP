@@ -12,10 +12,13 @@ print(eng2esp["two"])
 
 print(len(eng2esp))
 
-#Operador in
+#Operador in busca apenas nas chaves
 print("uno" in eng2esp)
+print("one" in eng2esp)
 
-#valores
+
+#valores o .values() busca nos valores
+print()
 valores_dict = eng2esp.values()
 print("uno" in valores_dict)
 
@@ -31,5 +34,5 @@ def count_letters(s):
             d[c] += 1
     return d
 
-dict_contagem = count_letters("ana")
+dict_contagem = count_letters("Banana")
 print(dict_contagem)

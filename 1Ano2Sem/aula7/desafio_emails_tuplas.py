@@ -12,11 +12,10 @@ for email in emails:
 
 
 
-    for d in dom:
-        if d not in dominio:
-            dominio[dom] = 1
-        else:
-            dominio[dom] += 1
+    if dom not in dominio:
+        dominio[dom] = 1
+    else:
+        dominio[dom] += 1
 
 tupla_invertida = t_users[-1], * t_users[1:-1], t_users[0] #aqui não são necessários parênteses em elementos que buscam str[0]
 # t invertida = (t_users[-1],) + t_users[1:-1] + (t_users[0],)   os () e , fazem ir de str para tupla

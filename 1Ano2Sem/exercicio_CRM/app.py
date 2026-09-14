@@ -18,6 +18,11 @@ def add_lead():
 
     print("Lead adicionado (func")
 
+#Desafio formatar a saída como tabela
+def list_leads():
+    leads = control.read_leads()
+    print(leads)
+
 def main():
     while True:
         print("\n Mini CRM de leads")
@@ -30,7 +35,7 @@ def main():
         if opc == "1":
             add_lead()
         elif opc == "2":
-            print("Listar leads")
+            list_leads()
         elif opc == "0":
             print("Sair do programa")
             break

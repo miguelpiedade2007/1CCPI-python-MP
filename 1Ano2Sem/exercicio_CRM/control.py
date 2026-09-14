@@ -16,13 +16,14 @@ def read_leads():
         return []
 
     try:
-        return json.loads(DB_PATH.read_text(enconding="utf=8"))
+        return json.loads(DB_PATH.read_text(enconding="utf-8"))
     except json.JSONDecodeError:
         return []
 
 #CREATE
-
+#desafio otimizar (similar a Big O), aqui para escrever/cadastrar ou ler um usuário todos os outros serão lidos ou escritos novamente
+#pense em uma maneira de concertar isso
 def create_lead(lead_dict):
     leads =read_leads()
     leads.append(lead_dict)
-    DB_PATH.write_text(json.dumps(leads, ensure_ascii=False,))
+    DB_PATH.write_text(json.dumps(leads, ensure_ascii=False, indent=8), encoding="utf-8")

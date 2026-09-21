@@ -1,3 +1,4 @@
+import lead
 import repo
 import control
 
@@ -22,12 +23,30 @@ def add_lead():
 def list_leads():
     leads = control.read_leads()
     print(leads)
+    print(f"## | {"Nome":<15} | E-mail")
+    for i, lead in enumerate(leads):
+        print(f"{i:02d} | lead{"nome":<15} | {lead["email"]}:")
+
+
+def search_leads():
+    query = input("Buscando por: ").strip().lower()
+
+
+    #Control
+    #comparação entre query digitada e o leads.json
+    search_results = control.read_leads_search(query)
+
+
+def export_leads():
+    print("Lead exportado")
 
 def main():
     while True:
         print("\n Mini CRM de leads")
         print("[1] Adicionar Lead")
         print("[2] Listar Lead")
+        print("[3] Buscar (nome/email)")
+        print("[4] Sair")
         print("[0] Sair do programa")
 
         opc = input("Escolha uma opção: ")
@@ -39,6 +58,12 @@ def main():
         elif opc == "0":
             print("Sair do programa")
             break
+        elif opc == "3":
+            search_leads()
+
+        elif opc == "4":
+            export_leads()
+
         else:
             print("Opção inválida")
 
